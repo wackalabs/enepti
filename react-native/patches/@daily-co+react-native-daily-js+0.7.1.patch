@@ -1,0 +1,12 @@
+diff --git a/node_modules/@daily-co/react-native-daily-js/dist/DailyMediaView.d.ts b/node_modules/@daily-co/react-native-daily-js/dist/DailyMediaView.d.ts
+index e27773f..0b98683 100644
+--- a/node_modules/@daily-co/react-native-daily-js/dist/DailyMediaView.d.ts
++++ b/node_modules/@daily-co/react-native-daily-js/dist/DailyMediaView.d.ts
+@@ -2,6 +2,7 @@
+ import { ViewStyle } from 'react-native';
+ import { MediaStreamTrack, RTCViewProps } from '@daily-co/react-native-webrtc';
+ declare type Props = {
++    id: string
+     videoTrack: MediaStreamTrack | null;
+     audioTrack: MediaStreamTrack | null;
+     mirror?: RTCViewProps['mirror'];

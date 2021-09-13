@@ -1,0 +1,25 @@
+{
+  "name": "enepti-server",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT License",
+  "main": "",
+  "scripts": {
+    "prettify": "prettier --write \"./**/*.{js,css,html,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denniswon/enepti.git"
+  },
+  "author": "philmillman",
+  "bugs": {
+    "url": "https://github.com/denniswon/enepti/issues"
+  },
+  "homepage": "https://github.com/denniswon/enepti#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

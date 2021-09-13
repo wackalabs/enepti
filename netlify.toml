@@ -1,0 +1,24 @@
+[build]
+    # we put server/functions inside react so we can do a deploy button for both 
+    # netlify only allows a single deploy button (and related toml)
+    functions = "server/functions"
+
+    # react and subfolders are the only parts that can be netlify deployed it is our base
+    base = "./react/"
+
+    command = "npm run build"
+
+    publish = "build/"
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[build.environment]
+    # suppress failures for for build warnings
+    CI = "false"
+
+[template.environment]
+    DAILY_API_KEY = "4d43bc956fbb1a29c1e94773188dd81d12ba6a43129b7960715a2b58c2ff41db"

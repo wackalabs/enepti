@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "composite": false,
+    "rootDir": ".",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "preserveSymlinks": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es2017", "dom"],
+    "types": ["jest", "node"],
+    "typeRoots": [
+      "../@types",
+      "node_modules/@types"
+    ],
+    "paths": {
+      "components/*": ["./src/components/*"],
+      "contexts": ["./src/contexts"],
+      "contexts/*": ["./src/contexts/*"],
+      "icons/*": ["./src/icons/*"],
+      "models": ["./src/models"],
+      "models/*": ["./src/models/*"],
+      "styles": ["./src/styles"],
+      "styles/*": ["./src/styles/*"],
+
+      "calls": ["./src/calls"],
+      "calls/*": ["./src/calls/*"],
+      "config": ["./src/config"],
+      "config/*": ["./src/config/*"],
+      "services": ["./src/services"],
+      "services/*": ["./src/services/*"],
+      "stores/*": ["./src/stores/*"],
+      "utils": ["./src/utils"],
+      "utils/*": ["./src/utils/*"],
+    },
+  },
+  "references": [
+  ],
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
